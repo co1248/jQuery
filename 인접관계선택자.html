@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script>
+            $(function() {
+            // $("#list_1").parent().css("border", "2px solid #f00");
+            // $("#list_1").next().css("border", "2px solid #f00");
+            // $("#wrap li").css("color", "red");
+            $("#wrap > li").css("color", "red");
+            });
+        </script>
+    </head>
+    <body>
+        <ul id="wrap">
+            <li>리스트1
+                <ul>
+                    <li id="list_1">리스트1-1</li>
+                    <li>리스트1-2</li>
+                </ul>
+            </li>
+            <li>리스트2</li>
+            <li>리스트3</li>
+        </ul>
+    </body>
+</html>
