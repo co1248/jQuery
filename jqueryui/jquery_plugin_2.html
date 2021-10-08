@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>Plugin</title>
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="css/jquery-ui.min.css">
+  <style>
+
+  </style>
+  <script>
+  $( function() {
+    $( "#startDate" ).datepicker({
+        minDate: +1,
+        maxDate: "+1M"
+    });   
+  });
+  </script>
+</head>
+<body>
+    <p>
+        <label for="startDate">날짜선택</label>
+        <input type="text" name="startDate" id="startDate">
+    </p>
+</body>
+</html>

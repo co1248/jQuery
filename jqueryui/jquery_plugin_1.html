@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>Plugin</title>
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <style>
+      .layer_popup {
+          position: absolute;
+          left: 50px;
+          top: 50px;
+          cursor: move;
+          border: 1px solid #000;
+      }
+  </style>
+  <script>
+  $( function() {
+    $( ".layer_popup" ).draggable();    
+  });
+  </script>
+</head>
+<body>
+    <div class="layer_popup">
+        <img src="images/window_object_1.jpg">
+    </div>
+</body>
+</html>
